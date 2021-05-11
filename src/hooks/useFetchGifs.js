@@ -18,8 +18,8 @@ export const useFetchGifs = (category) => {
                     data: imgs,
                     loading: false
                 });
-                
-        })
+            }
+        )
 
 
     },[category]);
