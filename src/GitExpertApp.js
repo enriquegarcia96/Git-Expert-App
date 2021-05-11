@@ -4,11 +4,13 @@ import { AddCategory } from './components/AddCategory';
 import { GifGrid } from './components/GifGrid';
 
 
-const GitExpertApp = () => {
+const GitExpertApp = ({ defaultCategories = [] }) => {
 
     
-    const [categories, setCategories] = useState(['Smahs']);
-
+    //const [categories, setCategories] = useState(['Smahs']);
+    const [categories, setCategories] = useState(defaultCategories);
+    
+    
 
     /*
     const handleAdd = () => {
